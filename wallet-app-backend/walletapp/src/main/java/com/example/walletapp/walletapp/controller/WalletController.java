@@ -10,12 +10,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/wallets")
 public class WalletController {
-
     @Autowired
     private WalletService walletService;
 
     @GetMapping
-    public List<Wallet> getAllWallets() {return walletService.getAllWallets();}
+    public List<Wallet> getAllWallets() {
+        return walletService.getAllWallets();
+    }
 
     @GetMapping("/{id}")
     public Wallet getWalletById(@PathVariable Long id) {
@@ -37,4 +38,3 @@ public class WalletController {
         walletService.deleteWallet(id);
     }
 }
-

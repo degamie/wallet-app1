@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import WalletDetails from './component/WalletDetails';
+import WalletList from './component/WalletList';
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
         Wallet Application
       </header>
       <div>
-        <WalletDetails/>
+        <WalletList/>
       </div>
     </div>
   );
