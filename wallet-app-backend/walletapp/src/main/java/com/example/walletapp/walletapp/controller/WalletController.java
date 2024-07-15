@@ -1,4 +1,3 @@
-// src/main/java/com/example/wallet/controller/WalletController.java
 package com.example.walletapp.walletapp.controller;
 
 import com.example.walletapp.walletapp.model.Wallet;
