@@ -1,7 +1,7 @@
-package com.example.wallet.walletapp.controller;
+package com.example.walletapp.walletapp.controller;
 
-import com.example.wallet.walletapp.model.Wallet;
-import com.example.wallet.walletapp.service.WalletService;
+import com.example.walletapp.walletapp.model.Wallet;
+import com.example.walletapp.walletapp.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

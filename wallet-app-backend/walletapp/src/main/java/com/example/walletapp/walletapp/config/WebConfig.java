@@ -1,4 +1,4 @@
-package com.example.wallet.walletapp.config;
+package com.example.walletapp.walletapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

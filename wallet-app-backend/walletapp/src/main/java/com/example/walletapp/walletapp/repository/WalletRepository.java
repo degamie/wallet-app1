@@ -1,6 +1,6 @@
-package com.example.wallet.walletapp.repository;
+package com.example.walletapp.walletapp.repository;
 
-import com.example.wallet.walletapp.model.Wallet;
+import com.example.walletapp.walletapp.model.Wallet;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface WalletRepository extends JpaRepository<Wallet, Long> {

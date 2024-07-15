@@ -1,7 +1,7 @@
-package com.example.wallet.walletapp.service;
+package com.example.walletapp.walletapp.service;
 
-import com.example.wallet.walletapp.model.Wallet;
-import com.example.wallet.walletapp.repository.WalletRepository;
+import com.example.walletapp.walletapp.model.Wallet;
+import com.example.walletapp.walletapp.repository.WalletRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
