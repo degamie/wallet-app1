@@ -41,15 +41,15 @@ const Register = () => {
         <div className="h-full">
     {/* <!-- Container --> */}
     <div className="mx-auto">
-        <div className=" flex justify-center px-4 py-16">
+        <div className=" flex justify-center px-4 py-24">
             {/* <!-- Row --> */}
             <div className="w-full xl:w-3/4 lg:w-11/12 flex">
                 {/* <!-- Col --> */}
-                <div className="w-auto h-auto bg-blue-500 dark:bg-gray-800 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
-                    style={{ backgroundImage: 'url(https://cdn3d.iconscout.com/3d/premium/thumb/digital-wallet-5760649-4839921.png)' }}></div>
+                <div className="w-auto h-auto bg-blue-500 dark:bg-gray-800 hidden lg:block lg:w-5/12 bg-center bg-contain bg-no-repeat rounded-l-lg"
+                    style={{ backgroundImage: 'url( https://cdni.iconscout.com/illustration/premium/thumb/new-user-registration-4489362-3723269.png?f=webp)' }}></div>
                 {/* <!-- Col --> */}
                 <div className=" w-full lg:w-7/12  bg-white border-2 dark:bg-gray-900 p-5 rounded-lg lg:rounded-l-none">
-                    <h3 className="py-4 text-2xl text-center text-gray-800 dark:text-white">Create an Account!</h3>
+                    <h3 className="py-4 text-2xl text-center text-gray-800 font-bold dark:text-white">Create an Account!</h3>
                     <form className="px-8 pt-6 pb-8 mb-4 bg-white dark:bg-gray-800 rounded">
                         <div className="mb-4 md:flex md:justify-between">
                             <div className="mb-4 md:mr-2 md:mb-0">
@@ -120,13 +120,9 @@ const Register = () => {
                             </button>
                         </div>
                         <hr className="mb-6 border-t" />
+
                         <div className="text-center">
-                            <a className="inline-block text-sm text-blue-500 dark:text-blue-500 align-baseline hover:text-blue-800" href="#">
-                                Forgot Password?
-                            </a>
-                        </div>
-                        <div className="text-center">
-                            <a className="inline-blocktext-sm text-blue-500 dark:text-blue-500 align-baseline hover:text-blue-800" href="./index.html">
+                            <a className="inline-block text-sm font-semibold text-blue-500 dark:text-blue-500 align-baseline hover:text-blue-800" href="./index.html">
                                 Already have an account? Login!
                             </a>
                         </div>
