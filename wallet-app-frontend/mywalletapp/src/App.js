@@ -6,13 +6,16 @@ import Balance from './component/functions/Balance';
 import AddFunds from './services/AddFunds';
 import TransferFunds from './services/TransferFunds'
 import Hero from './component/pages/Hero';
-import Layout from './component/Layout';
+import Footer from './component/pages/Footer';
+import Header from './component/pages/Header';
 
 function App() {
     return (
+        <>
+        <Header/>
         <Router>
              <div>
-                <Layout>
+                
                 <Routes>
                      <Route path="/" element={<Hero />} />
                      <Route path="/auth/login" element={<Login />} />
@@ -21,9 +24,11 @@ function App() {
                      <Route path="/add-funds" element={<AddFunds />} />
                      <Route path="/transfer-funds" element={<TransferFunds />} />
                  </Routes>
-                </Layout>
+                
              </div>
          </Router>
+         <Footer/>
+         </>
     );
 }
 
