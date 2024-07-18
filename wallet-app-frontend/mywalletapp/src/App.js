@@ -8,6 +8,7 @@ import TransferFunds from './services/TransferFunds'
 import Hero from './component/pages/Hero';
 import Footer from './component/pages/Footer';
 import Header from './component/pages/Header';
+import Dashboard from './component/Dashboard';
 
 function App() {
     return (
@@ -22,7 +23,9 @@ function App() {
                      <Route path="/auth/register" element={<Register />} />
                      <Route path="/balance" element={<Balance />} />
                      <Route path="/add-funds" element={<AddFunds />} />
-                     <Route path="/transfer-funds" element={<TransferFunds />} />
+                      <Route path="/transfer-funds" element={<TransferFunds />} />
+                      <Route path="/mydash" element={<Dashboard />} />
+
                  </Routes>
                 
              </div>

@@ -18,11 +18,11 @@ const Header = () => {
 
       <div>
 
-       <a href="#" className="flex items-center py-4 px-2">
+       <a href="/" className="flex items-center py-4 px-2">
 
-        <img src="https://via.placeholder.com/50" alt="Logo" className="h-8 w-8 mr-2" />
+        <img src="https://cdn-icons-png.flaticon.com/512/3757/3757881.png" alt="Logo" className="h-8 w-8 mr-2" />
 
-        <span className="font-semibold text-gray-500 text-lg">Navbar</span>
+        <span className="font-semibold text-gray-500 text-lg">SimplePay</span>
 
        </a>
 
@@ -30,13 +30,13 @@ const Header = () => {
 
       <div className="hidden md:flex items-center space-x-1">
 
-       <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+       <a href="/" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
 
-       <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+       <a href="/auth/login" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Login</a>
 
-       <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Services</a>
+       <a href="/auth/register" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Register</a>
 
-       <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+       <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact Us</a>
 
       </div>
 
@@ -44,9 +44,9 @@ const Header = () => {
 
      <div className="hidden md:flex items-center space-x-3 ">
 
-      <a href="#" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300">Log In</a>
+      <a href="/auth/login" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300">Log In</a>
 
-      <a href="#" className="py-2 px-4 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign Up</a>
+      <a href="/auth/register" className="py-2 px-4 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign Up</a>
 
      </div>
 
