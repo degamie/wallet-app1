@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from './axiosConfig';
+import React, { useContext, useState, useEffect } from 'react';
+import UserContext from './context/Context';
+import axios from 'axios';
 
 const Dashboard = () => {
+    const { username, firstName } = useContext(UserContext);
     const [balance, setBalance] = useState(0);
     const [amount, setAmount] = useState('');
     const [transferTo, setTransferTo] = useState('');
@@ -52,41 +54,78 @@ const Dashboard = () => {
     };
 
     return (
-        <div>
-            <h2>Dashboard</h2>
-            <p>Balance: ${balance.toFixed(2)}</p>
-            {message && <p>{message}</p>}
+        <div className="flex h-screen bg-gray-100">
+            {/* Sidebar */}
+            <div className="bg-indigo-600 text-white w-64 flex-shrink-0 p-4">
+                <h2 className="text-2xl font-bold mb-4">Simple.Pay</h2>
+                <nav className="space-y-4">
+                    <a href="#balance" className="block py-2 px-4 rounded hover:bg-indigo-700">Show Balance</a>
+                    <a href="#add-funds" className="block py-2 px-4 rounded hover:bg-indigo-700">Add Funds</a>
+                    <a href="#transfer-money" className="block py-2 px-4 rounded hover:bg-indigo-700">Transfer Money</a>
+                </nav>
+            </div>
 
-            <form onSubmit={addFunds}>
-                <h3>Add Funds</h3>
-                <input 
-                    type="number" 
-                    value={amount} 
-                    onChange={(e) => setAmount(e.target.value)} 
-                    placeholder="Amount" 
-                    required 
-                />
-                <button type="submit">Add Funds</button>
-            </form>
+            {/* Main Content */}
+            <div className="flex-1 p-6">
+                <div className="text-center mb-6">
+                    <h1 className="text-4xl font-bold text-gray-900">Hi {firstName}</h1>
+                    <p className="text-gray-700">Welcome to your Wallet {username}</p>
+                </div>
 
-            <form onSubmit={transferMoney}>
-                <h3>Transfer Money</h3>
-                <input 
-                    type="number" 
-                    value={amount} 
-                    onChange={(e) => setAmount(e.target.value)} 
-                    placeholder="Amount" 
-                    required 
-                />
-                <input 
-                    type="text" 
-                    value={transferTo} 
-                    onChange={(e) => setTransferTo(e.target.value)} 
-                    placeholder="Recipient Username" 
-                    required 
-                />
-                <button type="submit">Transfer</button>
-            </form>
+                {message && <p className="text-center text-red-500 mb-4">{message}</p>}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* Show Balance Card */}
+                    <div id="balance" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-bold mb-4">Show Balance</h3>
+                        <p className="text-gray-700">Balance: ${balance.toFixed(2)}</p>
+                    </div>
+
+                    {/* Add Funds Card */}
+                    <div id="add-funds" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-bold mb-4">Add Funds</h3>
+                        <form onSubmit={addFunds}>
+                            <input 
+                                type="number" 
+                                value={amount} 
+                                onChange={(e) => setAmount(e.target.value)} 
+                                placeholder="Amount" 
+                                className="w-full p-2 mb-4 border border-gray-300 rounded" 
+                                required 
+                            />
+                            <button type="submit" className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition duration-300">
+                                Add Funds
+                            </button>
+                        </form>
+                    </div>
+
+                    {/* Transfer Money Card */}
+                    <div id="transfer-money" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-bold mb-4">Transfer Money</h3>
+                        <form onSubmit={transferMoney}>
+                            <input 
+                                type="number" 
+                                value={amount} 
+                                onChange={(e) => setAmount(e.target.value)} 
+                                placeholder="Amount" 
+                                className="w-full p-2 mb-4 border border-gray-300 rounded" 
+                                required 
+                            />
+                            <input 
+                                type="text" 
+                                value={transferTo} 
+                                onChange={(e) => setTransferTo(e.target.value)} 
+                                placeholder="Recipient Username" 
+                                className="w-full p-2 mb-4 border border-gray-300 rounded" 
+                                required 
+                            />
+                            <button type="submit" className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition duration-300">
+                                Transfer Money
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
