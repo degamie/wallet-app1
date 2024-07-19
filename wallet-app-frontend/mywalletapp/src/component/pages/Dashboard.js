@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import UserContext from './context/Context';
+import UserContext from '../context/Context';
 import axios from 'axios';
 
 const Dashboard = () => {
@@ -56,12 +56,18 @@ const Dashboard = () => {
     return (
         <div className="flex h-screen bg-gray-100">
             {/* Sidebar */}
-            <div className="bg-indigo-600 text-white w-64 flex-shrink-0 p-4">
-                <h2 className="text-2xl font-bold mb-4">Simple.Pay</h2>
-                <nav className="space-y-4">
-                    <a href="#balance" className="block py-2 px-4 rounded hover:bg-indigo-700">Show Balance</a>
-                    <a href="#add-funds" className="block py-2 px-4 rounded hover:bg-indigo-700">Add Funds</a>
-                    <a href="#transfer-money" className="block py-2 px-4 rounded hover:bg-indigo-700">Transfer Money</a>
+            <div className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white w-64 flex-shrink-0 p-4 justify-center">
+            <a href="/" className="flex items-center py-4 px-2">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3757/3757881.png" alt="Logo" className="h-8 w-8 mr-2" />
+
+            <span className="font-bold text-white text-xl">SimplePay</span>
+
+</a>
+                <nav className="space-y-4 pt-6">
+                    <a href="#balance" className="block font-semibold py-2 px-4 rounded hover:bg-indigo-700">Show Balance</a>
+                    <a href="#add-funds" className="block font-semibold py-2 px-4 rounded hover:bg-indigo-700">Add Funds</a>
+                    <a href="#transfer-money" className="block font-semibold py-2 px-4 rounded hover:bg-indigo-700">Transfer Money</a>
                 </nav>
             </div>
 
