@@ -10,7 +10,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/auth/register', { username, password });
+            const response = await axios.post('/auth/register', { username, password, firstName, lastName, email });
             console.log(response.data);
         } catch (error) {
             console.error('Registration failed:', error);
@@ -86,8 +86,8 @@ const Register = () => {
                             </label>
                             <input
                                 className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="email"
-                                type="email"
+                                id="username"
+                                type="username"
                                 onChange={(e) => setUsername(e.target.value)}
                                 placeholder="John Doe"
                                 required
