@@ -105,7 +105,9 @@ const Hero = () => {
           </div>
           <div className="grow relative  z-10 max-md:mt-10 max-md:max-w-full max-sm:hidden">
             <div className="mx-20 mt-14 absolute -z-10 ">
-              <motion.svg width="657" height="683">
+
+              {/*Stylus for cards */}
+              {/* <motion.svg width="657" height="683">
                 <defs>
                   <linearGradient
                     id="customGradient"
@@ -151,7 +153,8 @@ const Hero = () => {
                   d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
                   transform=""
                 ></path>
-              </motion.svg>
+              </motion.svg> */}
+
             </div>
 
             <div className="gap-5 max-md:gap-0 abs z-10  ">
