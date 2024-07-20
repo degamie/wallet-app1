@@ -27,7 +27,7 @@ function AppComponent() {
                     <Route path="/dashboard" element={<Dashboard />} />
                 </Routes>
             </div>
-            <Footer />
+            {location.pathname !== "/dashboard" && <Footer />}
         </>
     );
 }

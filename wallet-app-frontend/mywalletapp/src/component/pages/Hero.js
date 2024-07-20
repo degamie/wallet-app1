@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignInAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
@@ -63,7 +64,7 @@ const Hero = () => {
         <a href="/auth/register"
           className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
           rel="noreferrer">Try Now →</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white">
+                <a href="#" className="text-sm font-semibold leading-6 text-white">
                     Learn more
                     <span>&nbsp;→</span>
                 </a>
@@ -71,6 +72,173 @@ const Hero = () => {
     </div>
   </div>
 </div>
+
+{/*About us area */}
+    <section className="  pt-52 pb-28 max-sm:pt-14 ">
+      <div className="max-container 2xl:px-24">
+        <div className="w-full flex items-center justify-between gap-10">
+          <div
+            id="left"
+            className=" flex flex-col max-w-96 w-full my-auto text-xl font-medium leading-6 text-zinc-900 text-opacity-80 max-md:mt-10"
+          >
+            <div className="text-sm text-[#97203E] uppercase tracking-[5px] max-sm:whitespace-nowrap max-sm:text-xs">
+              FINANCIAL EXCELLENCE
+            </div>
+            <h1 className="mt-8 text-5xl font-bold tracking-tighter leading-[56px] text-neutral-800 max-md:text-4xl max-md:leading-10">
+              Best gateway to <br /> our clients.
+            </h1>
+            <p className="mt-11 leading-7 max-md:mt-10 max-sm:mt-5 max-sm:text-lg">
+              Our services and features set a market standard for our competition while giving ease of access to our customers.
+            </p>
+            <div className="flex gap-5 justify-between mt-16 max-md:mt-10 max-sm:text-base">
+              <div className="self-start w-5 h-5 bg-red-700 rounded-xl" />
+              <div className="flex-auto">24/7 Full Service Support</div>
+            </div>
+            <div className="flex gap-5 justify-between mt-8 max-sm:text-base">
+              <div className="self-start w-5 h-5 bg-red-700 rounded-xl  " />
+              <div className="flex-auto">Immediate Response</div>
+            </div>
+            <div className="flex gap-5 justify-between mt-8 max-sm:text-base">
+              <div className="self-start w-5 h-5 bg-red-700 rounded-xl" />
+              <div className="flex-auto">Easy to Approach us</div>
+            </div>
+          </div>
+          <div className="grow relative  z-10 max-md:mt-10 max-md:max-w-full max-sm:hidden">
+            <div className="mx-20 mt-14 absolute -z-10 ">
+              <motion.svg width="657" height="683">
+                <defs>
+                  <linearGradient
+                    id="customGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stopColor="#97203E" />
+                    <stop offset="100%" stopColor="#FF3800" />
+                  </linearGradient>
+                </defs>
+                <motion.path
+                  initial={{ pathLength: 0, pathSpacing: 0.4 }}
+                  whileInView={{ pathLength: 1, pathSpacing: 0.4 }}
+                  transition={{
+                    pathLength: {
+                      delay: 0.4,
+                      type: "tween",
+                      duration: 10,
+                      ease: "linear",
+                      // repeat: Infinity,
+                      bounce: 0,
+                    },
+                  }}
+                  className=""
+                  strokeDasharray="3.846, 2.282"
+                  strokeDashoffset="0"
+                  strokeWidth="3.641"
+                  id="svgPath"
+                  stroke="url(#customGradient)"
+                  fill="none"
+                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
+                  transform=" "
+                ></motion.path>
+                <path
+                  id=""
+                  stroke="#97203E"
+                  strokeDasharray="3.846, 2.282"
+                  strokeDashoffset="0"
+                  strokeWidth="1.641"
+                  fill="none"
+                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
+                  transform=""
+                ></path>
+              </motion.svg>
+            </div>
+
+            <div className="gap-5 max-md:gap-0 abs z-10  ">
+              <div className="flex justify-end w-full">
+                <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full mr-12">
+                  <div className="flex flex-col  grow max-md:max-w-full">
+                    <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
+                      <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+                        <div className="w-[14%] max-md:ml-0 max-md:w-full">
+                          <div className="justify-center items-center px-4 mt-5 h-[53px] w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square  leading-[53.02px] max-md:mt-10">
+                            01
+                          </div>
+                        </div>
+                        <div className="flex flex-col ml-5 w-[72%] max-md:ml-0 max-md:w-full bg-violet-50 py-10 pl-4 pr-5">
+                          <div className="flex flex-col max-md:mt-10">
+                            <h2 className="text-2xl font-medium tracking-tight leading-6 text-neutral-800">
+                              Discovery and Analysis
+                            </h2>
+                            <div className="mt-5 text-lg leading-7 text-zinc-900 text-opacity-70">
+                              Perform a analysis of the client's <br /> existing
+                              financial habits.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-full">
+                <div className="flex  w-6/12 max-md:ml-0 max-md:w-full ml-12 ">
+                  <div className="flex flex-col grow max-md:max-w-full">
+                    <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
+                      <div className="flex gap-10 flex-row-reverse max-md:flex-col max-md:gap-0 max-md:">
+                        <div className="w-[14%] max-md:ml-0 max-md:w-full">
+                          <div className="justify-center items-center px-4 mt-5 w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E]  whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] leading-[53.02px] max-md:mt-10">
+                            02
+                          </div>
+                        </div>
+                        <div className="flex flex-col  ml-5 w-[72%] max-md:ml-0 max-md:w-full bg-violet-50 py-10 pl-4 pr-5">
+                          <div className="flex flex-col max-md:mt-10">
+                            <h2 className="text-2xl font-medium tracking-tight leading-6 text-neutral-800">
+                              Wallet management and financial suggestions
+                            </h2>
+                            <div className="mt-5 text-lg leading-7 text-zinc-900 text-opacity-70">
+                              Get personalised suggestions for your <br /> existing
+                              financial turnarounds.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-end w-full">
+                <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full mr-10">
+                  <div className="flex flex-col  grow max-md:max-w-full">
+                    <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
+                      <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+                        <div className="w-[14%] max-md:ml-0 max-md:w-full">
+                          <div className="justify-center items-center px-4 mt-5 text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] w-[53px] leading-[53.02px] max-md:mt-10">
+                            03
+                          </div>
+                        </div>
+                        <div className="flex flex-col ml-5 w-[72%] max-md:ml-0 max-md:w-full bg-violet-50 py-10 pl-4 pr-5">
+                          <div className="flex flex-col max-md:mt-10">
+                            <h2 className="text-2xl font-medium tracking-tight leading-6 text-neutral-800">
+                              Deployment and Support
+                            </h2>
+                            <div className="mt-5 text-lg leading-7 text-zinc-900 text-opacity-70">
+                              Regularly communicate with our <br /> client to
+                              any concern.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 {/*Content section below banner */}
 <div className="bg-gradient-to-b from-blue-50 to-indigo-50">
     <div className="mx-auto max-w-5xl px-6 py-10 text-center md:px-12 md:py-18">
