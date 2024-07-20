@@ -54,16 +54,44 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="flex h-screen bg-gray-100">
+        <>
+        <div className = "fixed w-full z-30 flex bg-white dark:bg-[#0F172A] p-2 items-center justify-center h-16 px-10 py-8 shadow-md">
+      
+      <a href="/" className="flex items-center py-4 px-2">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3757/3757881.png" alt="Logo" className="h-8 w-8 mr-2" />
+
+        <span className="font-bold text-black text-xl">SimplePay</span>
+
+    </a>
+        {/* <!-- SPACER --> */}
+        <div className = "grow h-full flex items-center justify-center"></div>
+        <div className = "flex-none h-full text-center flex items-center justify-center">
+            
+                <div className = "flex space-x-3 items-center px-3">
+                    <div classNameclassName = "flex-none flex justify-center">
+                    <div className="w-8 h-8 flex ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShta_GXR2xdnsxSzj_GTcJHcNykjVKrCBrZ9qouUl0usuJWG2Rpr_PbTDu3sA9auNUH64&usqp=CAU" alt="profile" classNameclassName="shadow rounded-full object-cover" />
+                    </div>
+                    </div>
+
+                    <div className = "hidden md:block text-sm md:text-md text-black dark:text-white">John Doe</div>
+                </div>
+                
+        </div>
+    </div>
+
+
+        <div className="flex h-screen bg-gray-100 pt-16">
             {/* Sidebar */}
-            <div className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white w-64 flex-shrink-0 p-4 justify-center">
-            <a href="/" className="flex items-center py-4 px-2">
+            <div className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white w-64 flex-shrink-0 p-4 justify-center shadow-md">
+            {/* <a href="/" className="flex items-center py-4 px-2">
 
             <img src="https://cdn-icons-png.flaticon.com/512/3757/3757881.png" alt="Logo" className="h-8 w-8 mr-2" />
 
             <span className="font-bold text-white text-xl">SimplePay</span>
 
-</a>
+</a> */}
                 <nav className="space-y-4 pt-6">
                     <a href="#balance" className="block font-semibold py-2 px-4 rounded hover:bg-indigo-700">Show Balance</a>
                     <a href="#add-funds" className="block font-semibold py-2 px-4 rounded hover:bg-indigo-700">Add Funds</a>
@@ -74,7 +102,7 @@ const Dashboard = () => {
             {/* Main Content */}
             <div className="flex-1 p-6">
                 <div className="text-center mb-6">
-                    <h1 className="text-4xl font-bold text-gray-900">Hi {firstName}</h1>
+                    <h1 className="text-4xl font-bold text-gray-900">Hi {/*username*/} FirstName</h1>
                     <p className="text-gray-700">Welcome to your Wallet {username}</p>
                 </div>
 
@@ -133,6 +161,7 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
