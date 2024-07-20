@@ -81,7 +81,7 @@ const Hero = () => {
             id="left"
             className=" flex flex-col max-w-96 w-full my-auto text-xl font-medium leading-6 text-zinc-900 text-opacity-80 max-md:mt-10"
           >
-            <div className="text-sm text-[#97203E] uppercase tracking-[5px] max-sm:whitespace-nowrap max-sm:text-xs">
+            <div className="text-sm text-blue-700 uppercase tracking-[5px] max-sm:whitespace-nowrap max-sm:text-xs">
               FINANCIAL EXCELLENCE
             </div>
             <h1 className="mt-8 text-5xl font-bold tracking-tighter leading-[56px] text-neutral-800 max-md:text-4xl max-md:leading-10">
@@ -91,15 +91,15 @@ const Hero = () => {
               Our services and features set a market standard for our competition while giving ease of access to our customers.
             </p>
             <div className="flex gap-5 justify-between mt-16 max-md:mt-10 max-sm:text-base">
-              <div className="self-start w-5 h-5 bg-red-700 rounded-xl" />
+              <div className="self-start w-5 h-5 bg-blue-800 rounded-xl" />
               <div className="flex-auto">24/7 Full Service Support</div>
             </div>
             <div className="flex gap-5 justify-between mt-8 max-sm:text-base">
-              <div className="self-start w-5 h-5 bg-red-700 rounded-xl  " />
+              <div className="self-start w-5 h-5 bg-blue-800 rounded-xl  " />
               <div className="flex-auto">Immediate Response</div>
             </div>
             <div className="flex gap-5 justify-between mt-8 max-sm:text-base">
-              <div className="self-start w-5 h-5 bg-red-700 rounded-xl" />
+              <div className="self-start w-5 h-5 bg-blue-800 rounded-xl" />
               <div className="flex-auto">Easy to Approach us</div>
             </div>
           </div>
@@ -164,7 +164,7 @@ const Hero = () => {
                     <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
                       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                         <div className="w-[14%] max-md:ml-0 max-md:w-full">
-                          <div className="justify-center items-center px-4 mt-5 h-[53px] w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square  leading-[53.02px] max-md:mt-10">
+                          <div className="justify-center items-center px-4 mt-5 h-[53px] w-[53px] text-2xl font-bold tracking-tight text-center text-blue-700 whitespace-nowrap bg-violet-50 rounded-3xl aspect-square  leading-[53.02px] max-md:mt-10">
                             01
                           </div>
                         </div>
@@ -190,7 +190,7 @@ const Hero = () => {
                     <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
                       <div className="flex gap-10 flex-row-reverse max-md:flex-col max-md:gap-0 max-md:">
                         <div className="w-[14%] max-md:ml-0 max-md:w-full">
-                          <div className="justify-center items-center px-4 mt-5 w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E]  whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] leading-[53.02px] max-md:mt-10">
+                          <div className="justify-center items-center px-4 mt-5 w-[53px] text-2xl font-bold tracking-tight text-center text-blue-700  whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] leading-[53.02px] max-md:mt-10">
                             02
                           </div>
                         </div>
@@ -217,7 +217,7 @@ const Hero = () => {
                     <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
                       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                         <div className="w-[14%] max-md:ml-0 max-md:w-full">
-                          <div className="justify-center items-center px-4 mt-5 text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] w-[53px] leading-[53.02px] max-md:mt-10">
+                          <div className="justify-center items-center px-4 mt-5 text-2xl font-bold tracking-tight text-center text-blue-700 whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] w-[53px] leading-[53.02px] max-md:mt-10">
                             03
                           </div>
                         </div>
